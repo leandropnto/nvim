@@ -31,10 +31,12 @@ lsp_installer.on_server_ready(function(server)
     opts = vim.tbl_deep_extend("force", elixirls_opts, opts)
   end
 
-  if server.name == "dartls" then
-    local dart_opts = require("user.lsp.settings.dart")
-    opts = vim.tbl_deep_extend("force", dart_opts, opts)
-  end
+--   if server.name == "dartls" then
+--     local dart_opts = require("user.lsp.settings.dart")
+--     opts = vim.tbl_deep_extend("force", dart_opts, opts)
+--   end
+
+
   -- This setup() function is exactly the same as lspconfig's setup function.
 --   if server.name == "jdtls" then
 --     local java_opts = require("user.lsp.settings.java")
