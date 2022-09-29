@@ -81,6 +81,8 @@ return packer.startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use {'nvim-telescope/telescope-file.browser.nvim'}
+
   -- dev icons
   use "kyazdani42/nvim-web-devicons"
 
@@ -100,7 +102,20 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
 
-
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup({
+      size = 20,
+      open_mapping = [[<c-\>]],
+      hide_numbers = true,
+      shade_filetypes = {},
+      shade_terminals = true,
+      shading_factor = 2,
+      start_in_insert = true,
+      insert_mappings = true,
+      shell = vim.o.shell,
+      dir="./"
+    })
+  end}
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
