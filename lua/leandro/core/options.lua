@@ -38,3 +38,5 @@ opt.splitbelow = true
 opt.iskeyword:append("-")
 
 opt.scrolloff = 10
+
+vim.opt.wildignore:append({ "*/node_modules/*" })

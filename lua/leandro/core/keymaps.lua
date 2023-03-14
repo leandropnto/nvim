@@ -28,6 +28,12 @@ keymap.set("n", "<C-s>", ":w<CR>") -- Salva o arquivo
 keymap.set("n", "<leader>bd", ":bd<CR>") -- Fecha o buffer
 keymap.set("n", "<leader><tab>", ":bnext<CR>") -- Fecha o buffer
 
+-- Movimentação entre os buffers
+keymap.set("n", "<M-Right>", "<C-w><C-l>")
+keymap.set("n", "<M-Left>", "<C-w><C-h>")
+keymap.set("n", "<M-Up>", "<C-w><C-k>")
+keymap.set("n", "<M-Down>", "<C-w><C-j>")
+
 -- plugins keymaps
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
@@ -49,3 +55,4 @@ keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git 
 keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
 keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
+keymap.set("n", "<leader>hk", "<cmd>Telescope keymaps<cr>")
