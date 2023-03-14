@@ -26,7 +26,8 @@ keymap.set("n", "<C-s>", ":w<CR>") -- Salva o arquivo
 
 -- Buffer management
 keymap.set("n", "<leader>bd", ":bd<CR>") -- Fecha o buffer
-keymap.set("n", "<leader><tab>", ":bnext<CR>") -- Fecha o buffer
+keymap.set("n", "<leader><tab>", ":bnext<CR>") -- Troca para o próximo buffer
+keymap.set("n", "<C-w>", ":bd<CR>") -- fecha os buffers usando o atalho do vscode
 
 -- Movimentação entre os buffers
 keymap.set("n", "<M-Right>", "<C-w><C-l>")
