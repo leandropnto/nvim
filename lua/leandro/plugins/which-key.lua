@@ -95,6 +95,14 @@ whitch_key.setup({
 })
 
 whitch_key.register({
+	w = {
+		"<cmd>update!<CR>",
+		"Salvar",
+	},
+	q = {
+		"<cmd>q!<CR>",
+		"Sair!",
+	},
 	s = {
 		name = "Split", -- optional group name
 	},
@@ -112,5 +120,13 @@ whitch_key.register({
 	},
 	h = {
 		name = "Ajuda",
+	},
+	z = {
+		name = "Packer",
+		c = { "<cmd>PackerCompile<cr>", "Compile" },
+		i = { "<cmd>PackerInstall<cr>", "Install" },
+		s = { "<cmd>PackerSync<cr>", "Sync" },
+		S = { "<cmd>PackerStatus<cr>", "Status" },
+		u = { "<cmd>PackerUpdate<cr>", "Update" },
 	},
 }, { prefix = "<leader>" })
