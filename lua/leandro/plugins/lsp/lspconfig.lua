@@ -82,6 +82,8 @@ lspconfig["cssls"].setup({
 lspconfig["tailwindcss"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
+	filetypes = { "html", "css", "elixir", "javascriptreact", "typescriptreact", "vue", "svelte" },
+	root_dir = vim.loop.cwd,
 })
 
 -- configure emmet language server
