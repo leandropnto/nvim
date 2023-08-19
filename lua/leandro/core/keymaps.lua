@@ -27,6 +27,7 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 keymap.set("n", "<C-s>", ":w<CR>") -- Salva o arquivo
+keymap.set("i", "<C-s>", "<esc>:w<CR>") -- Salva o arquivo
 
 -- Buffer management
 keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Fechar Buffer" }) -- Fecha o buffer
