@@ -148,6 +148,8 @@ return require("packer").startup(function(use)
 		end,
 		requires = { { "hoob3rt/lualine.nvim", opt = true }, { "kyazdani42/nvim-web-devicons", opt = true } },
 	})
+	-- Packer:
+	use("Mofiqul/vscode.nvim")
 	--
 	-- Put this at the end after all plugins
 	if packer_bootstrap then
